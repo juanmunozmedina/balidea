@@ -1,0 +1,49 @@
+footer {
+    padding: 2em 0;
+    .info {
+        p {
+            font-size: calc(14px + 4 * ((100vw - 416px) / 1604));
+            line-height: 1.15;
+            color: black;
+        }
+    }
+    .social-media {
+        text-align: right;
+        @media screen and (max-width: $mini) {
+            text-align: left;
+        }
+        .menu {
+            list-style: none;
+            display: inline-flex;
+            gap: 1em;
+            padding: 0;
+            .menu-item {
+                a {
+                    text-decoration: none;
+                    transition: all .5s ease-in-out;
+                    i {
+                        font-family: "Font Awesome 6 Brands";
+                        font-size: calc(18px + 4 * ((100vw - 416px) / 1604));
+                        line-height: 1.15;
+                        color: black;
+                        font-style: normal;
+                    }
+                    &:hover {
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+        @media screen and (max-width: $mini) {
+            text-align: left;
+        }
+        p {
+            font-size: calc(14px + 4 * ((100vw - 416px) / 1604));
+            line-height: 1.15;
+            color: black;
+        }
+    }
+}

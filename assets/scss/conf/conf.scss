@@ -1,0 +1,18 @@
+/* Import FontAwesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+/* Breakpoints */
+$normal: 1200px;
+$medium: 1023px;
+$mini: 767px;
+$movil: 479px;
+
+/* Body font */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+/* Colors */
+$principal: #004A5B;
+$secondary: #BDB275;

@@ -1,0 +1,86 @@
+header {
+    background-color: $principal;
+    overflow: hidden;
+    height: 4em;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1720px;
+        margin: auto;
+        &:after, &:before {
+            display: none;
+        }
+        #logo {
+            width: fit-content;
+            #logoImg {
+                background-color: white;
+                height: 1.75em;
+                width: 5em;
+            }
+        }
+        #hamburguer {
+            width: fit-content;
+            #menuPrincipalTrigger {
+                transition: all 0.3s cubic-bezier(0.6,0,0.4,1);
+                position: relative;
+                width: 2em;
+                height: 2em;
+                cursor: pointer;
+                margin-left: auto;
+                #menuPrincipalTriggerInner {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    bottom: auto;
+                    right: auto;
+                    width: 24px;
+                    height: 2px;
+                    margin-left: calc(50% - 12px);
+                    margin-right: calc(50% - 12px);
+                    background: white;
+                    transition: all 0.3s linear;
+                    border-radius: 4px;
+                    &:before {
+                        position: absolute;
+                        top: -0.5em;
+                        left: 0;
+                        bottom: auto;
+                        right: auto;
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        content: "";
+                        display: block;
+                        clear: both;
+                        background: inherit;
+                        transition: all 0.75s cubic-bezier(0.6,0,0.4,1);
+                        transform-origin: 0 0;
+                        border-radius: 4px;
+                    }
+                    &:after {
+                        position: absolute;
+                        top: auto;
+                        left: 0;
+                        bottom: -0.5em;
+                        right: auto;
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        content: "";
+                        display: block;
+                        clear: both;
+                        background: inherit;
+                        transition: all 0.75s cubic-bezier(0.6,0,0.4,1);
+                        transform-origin: 0 100%;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

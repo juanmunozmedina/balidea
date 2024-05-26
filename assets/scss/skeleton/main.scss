@@ -1,0 +1,173 @@
+.balidea {
+    &__etiam_iaculis {
+        margin-bottom: 4.5em;
+        @media screen and (max-width: $medium) {
+            margin-bottom: 4em;
+        }
+        &__title {
+            h1 {
+                font-size: calc(22px + 4 * ((100vw - 416px) / 1604));
+                line-height: 1.15;
+                text-transform: uppercase;
+                color: $principal;
+                padding-top: 0.5em;
+            }
+        }
+        &__wrap {
+            background-color: $secondary;
+            .row {
+                padding: 3em 0;
+                box-sizing: border-box;
+                @media screen and (max-width: $normal) {
+                    padding: 2.5em;
+                }
+                @media screen and (max-width: $movil) {
+                    padding: 1.5em;
+                }
+                .item {
+                    text-align: center;
+                    .icon {
+                        img {
+                            max-width: 175px;
+                            width: 100%;
+                            height: auto;
+                            background-color: #004A5B;
+                            padding: 0.9375rem;
+                            box-sizing: border-box;
+                            border-radius: 100%;
+                        }
+                    }
+                    h2 {
+                        font-size: calc(18px + 4 * ((100vw - 416px) / 1604));
+                        line-height: 1.15;
+                        text-transform: uppercase;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    &__orci_varius {
+        background-color: $principal;
+        &__title {
+            h1 {
+                font-size: calc(22px + 4 * ((100vw - 416px) / 1604));
+                line-height: 1.15;
+                text-transform: uppercase;
+                color: white;
+                padding-top: 1.5em;
+            }
+        }
+        &__wrap {
+            padding:1em 0 3em;
+            .notice {
+                padding-bottom: 0.9375rem;
+                padding-top: 0.9375rem;
+                position: relative;
+                @media screen and (max-width: $movil) {
+                    width: 100%;
+                }
+                .image {
+                    border: 2px solid white;
+                    box-sizing: border-box;
+                    z-index: 1;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        filter: brightness(0.65);
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            filter: none;
+                        }
+                    }
+                }
+                h3 {
+                    font-size: calc(16px + 4 * ((100vw - 416px) / 1604));
+                    line-height: 1.15;
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: 500;
+                    padding: 0.5em 1em;
+                    background-color: $principal;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    margin: 0;
+                }
+            }
+            .notice:first-child {
+                &:before {
+                    position: absolute;
+                    left: -5%;
+                    top: -5%;
+                    height: 160%;
+                    width: 35%;
+                    background-color: $secondary;
+                }
+            }
+            .notice:nth-child(2) {
+                &:before {
+                    position: absolute;
+                    left: 10%;
+                    top: -5%;
+                    height: 150%;
+                    width: 15%;
+                    background-color: white;
+                    @media screen and (max-width: $movil) {
+                        display: none;
+                    }
+                }
+                &:after {
+                    position: absolute;
+                    left: 25%;
+                    top: -5%;
+                    height: 150%;
+                    width: 60%;
+                    background-color: $secondary;
+                    @media screen and (max-width: $movil) {
+                        display: none;
+                    }
+                }
+            }
+            .notice:nth-child(3) {
+                &:before {
+                    position: absolute;
+                    left: 25%;
+                    top: -5%;
+                    height: 105%;
+                    width: 15%;
+                    background-color: white;
+                    @media screen and (max-width: $mini) {
+                        display: none;
+                    }
+                }
+                &:after {
+                    position: absolute;
+                    left: 47.5%;
+                    top: -5%;
+                    height: 200%;
+                    width: 15%;
+                    background-color: $secondary;
+                    @media screen and (max-width: $mini) {
+                        display: none;
+                    }
+                }
+            }
+            .notice:nth-child(4) {
+                &:before {
+                    position: absolute;
+                    left: 0.9375rem;
+                    top: -5%;
+                    height: 170%;
+                    width: 75%;
+                    background-color: $secondary;
+                    @media screen and (max-width: $medium) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
